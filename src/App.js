@@ -1,5 +1,6 @@
 import './App.css';
 import Count from './Count';
+import UsersList from './components/UsersList';
 import { useDispatch } from 'react-redux';
 import {incrementCounter, decrementCounter} from './actions/counterAction';
 
@@ -17,6 +18,7 @@ function App() {
       <Count/>
       <button onClick = {handleIncrement}> Increment</button>
       <button onClick = {handleDecrement}>Decrement</button>
+      <UsersList />
     </div>
   );
 }
