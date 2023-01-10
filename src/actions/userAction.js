@@ -7,7 +7,7 @@ export function userListLoaded (data) {
     }
 }
 export function getUserList() {
-    return async function getUserList(dispatch) {
+    return async function getUserListThunk(dispatch) {
         
         await fetch ('https://reqres.in/api/users?page=2')
             .then(response => response.json())
